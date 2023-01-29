@@ -218,7 +218,6 @@ p {
 }
 .tools {
     width: 50%;
-    /* margin-right: 6rem; */
 }
 /* Large Devices Skills*/
 @media only screen and (max-width: 1270px) {
@@ -258,7 +257,6 @@ p {
 @media only screen and (max-width: 768px) {
     .container-2 {
         margin: 0 2rem;
-        /* flex-direction: column; */
     }
 }
 @media only screen and (max-width: 576px){
@@ -272,14 +270,6 @@ p {
         margin-left: 0;
     }
 }
-/* @media only screen and (min-width: 320px) and (max-width: 576px){
-    #skills, {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: max-content;
-    }
-} */
 /* Services Section */
 #services {
     background-color: #03001C;
@@ -494,7 +484,6 @@ input, textarea {
         width: 12rem
     }
 }
-
 
 /* Footer */
 footer {
