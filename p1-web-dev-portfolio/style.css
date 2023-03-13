@@ -136,11 +136,14 @@ ol {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: left;    
+    justify-content: left;   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
 }
 .about-me-container {
     display: block;
-    margin: 0 18rem;
+    margin: 0 15rem;
     padding: 14px 16px;
 }
 h1, h3 {
@@ -170,18 +173,18 @@ p {
 /* Large Devices About Me*/
 @media only screen and (max-width: 1270px) {
     .about-me-container {
-        margin: 0 15rem;
+        margin: 0 13rem;
     }
 }
 /* Medium Devices About Me*/
 @media only screen and (max-width: 947px) {
     .about-me-container {
-        margin: 0 9rem;
+        margin: 0 8rem;
     }
 }
 @media only screen and (max-width: 771px) {
     .about-me-container {
-        margin: 0 7rem;
+        margin: 0 6rem;
         font-size: 16px;
     }
 }
@@ -189,7 +192,13 @@ p {
 /* Small Devices */
 @media only screen and (max-width: 739px) {
     .about-me-container {
-        margin: 0 4rem;
+        margin: 0 3rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .about-me-container {
+        margin: 0 1rem;
+        font-size: small;
     }
 }
 
@@ -206,7 +215,7 @@ p {
 }
 .skills-container {
     display: flex;
-    margin: 0 16rem;
+    margin: 0 14rem;
     padding: 14px 16px;
     align-items: center;
 }
@@ -265,6 +274,7 @@ p {
         flex-direction: column;
         margin: 0;
         padding: 0;
+        font-size: small;
     }
     .skill-img img {
         width: 3rem;
@@ -276,7 +286,6 @@ p {
 /* Services Section */
 #services {
     background-color: #03001C;
-    /* height: 100vh; */
 }
 .services-container {
     display: flex;   
@@ -289,15 +298,6 @@ p {
 .offers-box img {
     width: 4rem;
 }
-/* .ecommerce {
-    width: 4rem;
-}
-.html5 {
-    width: 4rem;
-}
-.landing {
-    width: 4rem;
-} */
 .offers {
     margin: 0 8rem 0 2rem;
     padding: 3rem 0 0 2rem;
@@ -317,7 +317,7 @@ p {
 /* Larger Devices */
 @media only screen and (max-width: 1270px) {
     .offers {
-        padding: 4rem 0 0 2rem;
+        padding: 4rem 0 0 1rem;
         margin-top: 1rem 0;
     }
     .box {
@@ -334,8 +334,8 @@ p {
 }
 /* Medium Devices */
 @media only screen and (max-width: 991px) {
-    offers {
-        padding: 5rem 0 0 0rem;
+    .offers {
+        padding-top: 4rem;
         margin-top: 2rem 0;
     }
 }
@@ -343,8 +343,18 @@ p {
     .service-img img {
         display: none;
     }
+    .box {
+        width: 100%;
+    }
     .offers {
-        margin: auto;
+        margin: 0 3rem;
+        padding-top: 2rem;
+    }
+}
+/* Small Devices */
+@media only screen and (max-width: 576px){
+    .offers{
+        font-size: small;
     }
 }
 /* Call to Action Section */
@@ -353,7 +363,7 @@ p {
     margin: 5rem 9rem 5rem 4rem;
 }
 .box-cta {
-    margin-left: 6rem;
+    margin-left: 2rem;
 }
 .cta-container {
     display: grid;
@@ -364,8 +374,8 @@ p {
     align-items: center;
 }
 .box-btn {
-    margin-left: 7rem;
-    padding-left: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -381,9 +391,6 @@ p {
         font-size: 3.5rem;
         margin: 3rem;
     }
-    .box-btn {
-        margin-right: 3rem;
-    }
 }
 @media only screen and (max-width: 921px){
     .cta-container h1 {
@@ -395,15 +402,7 @@ p {
     .cta-container h1 {
         font-size: 2.5rem;
         margin: 1rem;
-    }
-    .box-btn {
-        padding: 0;
-        width: 200px;
-    }
-    .box-cta {
-        margin-left: 2.5rem;
-    }
-    
+    }    
 }
 @media only screen and (max-width: 721px){
    .cta-container {
@@ -416,17 +415,17 @@ p {
     display: grid;
     grid-template-columns: 45% 45%;
     gap: 1rem;
-    padding: 5rem 0 5rem 8rem;
+    padding: 5rem 0 5rem 5rem;
     background-color: #191919;
     justify-content: center;
     align-items: center;
-    height: 25rem;
+    height: 100vh;
 }
 .featured {
     margin-right: 5rem;
 }
 .coming {
-    margin-left: 8rem;
+    text-align: center;
 }
 @media only screen and (max-width: 768px){
     .projects-container {
@@ -441,11 +440,17 @@ p {
         padding: 0;
     }
     .coming {
-        margin: 3rem 0 0 0;
+        margin-top: 3rem;
         padding: 0;
     }
     .featured {
-        margin: 0 2rem 0 2rem
+        margin: 0 2rem;
+    }
+}
+/* Small Devices */
+@media only screen and (max-width: 576px){
+    .projects-container{
+        font-size: small;
     }
 }
 /* Contact Me Section */
@@ -456,16 +461,16 @@ p {
     padding: 5rem 0;
 }
 .linkedin {
-    width: 4rem;
+    width: 3rem;
 }
 .twitter {
-    width: 4rem;
+    width: 3rem;
 }
 .email-img {
     width: 12rem;
 }
 .social-img-link {
-    width: 7rem;
+    width: 6rem;
 }
 .contact-social {
     display: flex;
