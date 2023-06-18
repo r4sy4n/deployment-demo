@@ -30,9 +30,10 @@ To view the portfolio website locally, follow these steps:
 </ol>
 
 ## Technologies Used
-
-HTML
-CSS
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul>
 
 ## License
 
@@ -43,3 +44,7 @@ This project is licensed under the MIT License. Feel free to modify and distribu
 If you have any questions, suggestions, or just want to say hello, feel free to reach out to me. My contact information can be found on my portfolio website in the "Contact" section.
 
 Thank you for visiting my portfolio repository!
+
+## Live Site
+
+https://russell-first-portfolio.netlify.app/
